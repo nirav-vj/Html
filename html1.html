@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+
+    body{
+        background-color: red;
+    }    
+        body, html {
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .background-red {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.form-container {
+    background-color: white;
+    width: 1000px;
+    max-width: 800px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-content {
+    display: flex;
+    width: 100%;
+}
+
+.logo-side {
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* width: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laravel-logo {
+    width: 300px;
+    height: 250px;
+}
+
+.form-side {
+    padding: 40px;
+    flex-grow: 1;
+    width: 500px;
+    height: 450px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* .submit-btn:hover {
+    background-color: white;
+} */
+
+    </style>
+</head>
+<body>
+    <div class="background-red">
+        <div class="form-container">
+            <div class="form-content">
+                <div class="logo-side">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo" class="laravel-logo">
+                </div>
+                <div class="form-side">
+                    <h2>Register Here</h2>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

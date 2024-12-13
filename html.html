@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Form</title>
+
+    <style>
+        body {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 60%;
+            height: 650px;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 150px;
+            box-shadow: 40px 40px 40px rgba(10, 10, 10, 0.3);
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 600px;
+            background-color: rgba(119, 136, 153, 0.128);
+            border-radius: 50px;
+            z-index: 2;
+        }
+        .heding{
+            color: red;
+            margin-left: 680px;
+            /* margin-bottom: 50px; */
+            /* border-bottom: 2px solid; */
+        }
+        .form-group{
+            margin-left: 500px;
+            margin-top: -10px;
+            margin-bottom: 0px;
+            font: italic small-caps bold 20px/20px Georgia, serif;
+        }
+        .day{
+            color: white;
+            font: italic small-caps bold 20px/20px Georgia, serif;
+        }
+        .day:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://user-images.githubusercontent.com/1915268/67272248-d3342000-f4d9-11e9-86ba-6933108766e0.png" alt="Laravel Logo">
+
+        <form action="" method="post">
+            <h1 class="heding">FILL THE FORM</h1><br>
+            <div style="margin-bottom: 0px;">
+
+                <div class="form-group" style="display: flex;gap: 90px;">
+                    <div>
+    
+                        <label for="name">  First Name : </label><br>
+                        <input type="text" name="first_name" style="width: 250px; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required>
+                    </div>
+                    <div>
+    
+                        <label for="name"> Last Name : </label><br>
+                        <input type="text" name="last_name" style="width: 250px; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required><br><br><br>
+                    </div>
+                </div>
+    
+                <div  class="form-group">
+                    <label for="email">Email :</label><br>
+                    <input type="email" name="email"  style="width: 99%; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required><br><br>
+                </div>
+
+                <div>
+                    <label for="gender" class="form-group"> Gender: </label required><br><br>
+                        <div class="form-group" style="display: flex;gap: 80px;">
+
+                            <div>
+                                <label for="MALE">Male</label>
+                                <input type="radio" name="gender" id="MALE" value="1"> 
+                            </div>
+
+                            <div>
+                                <label for="FEMALE">Female </label>
+                                <input type="radio" name="gender" id="FEMALE" value="2">
+                            </div>
+
+                            <div>
+                                <label for="OTHER">Prefer Not To Say </label>
+                                <input type="radio" name="gender" id="OTHER" value="3">
+                            </div>
+
+                             
+                        </div>
+            
+                </div><br><br>
+                <div class="form-group" style="display: flex;gap: 90px;">
+                    <div>
+    
+                        <label for="name">Mobile Number : </label><br>
+                        <input type="text" name="mobile_number" maxlength="10" style="width: 250px; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required>
+                    </div>
+                    <div>
+    
+                        <label for="name"> Date Of Birth : </label><br>
+                        <input type="date" name="date_of_birth" style="width: 250px; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required><br><br><br>
+                    </div>
+                </div>
+
+                <div  class="form-group">
+                    <label for="email"> Address :</label><br>
+                    <input type="text" name="address"  style="width: 99%; height: 25px;border-radius: 5px; border: 2px solid red;" id="name" name="name" required><br><br><br>
+                </div>
+
+                <div>
+                    <input type="submit" class="day" id="button" name="submit" style="margin-left: 45.5%; border:none;height: 35px; width:54.5%;background-color: red; border-radius:5px;">
+
+                </div>
+                
+            </div>
+    
+            
+        </form>
+    </div>
+
+</body>
+</html>
