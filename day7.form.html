@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="hello.css">
+    <link rel="icon" type="image" href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Forms-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    .day{font-variant: small-caps;font-weight: 900;font-size: medium;
+            
+        }
+        .day{
+        font: italic small-caps bold 20px/20px Georgia, serif;;
+        }
+         .search[type=text]:focus{
+            width: 30%;
+            background-color: aquamarine;
+            border-radius: 5px;
+            text-align: center;
+           
+        }
+    </style>
+    
+    
+</head>
+<body style="background-color: rgb(255,204,153);">
+    
+    <div style="width: 55%;">
+        
+        <img src="" alt="">
+            <!-- <fieldset> -->
+            
+      
+        <form class="day" style="border-radius: 30px;
+         margin: 20px 20px 20px 20px;
+         padding: 20px 20px 20px 20px ;
+         width:1020px;
+         height: 715px;
+         outline-style: solid;
+         outline-color: brown;
+         outline-width:10px;
+         outline-offset: 1px;">
+
+        <legend  style="color:10px solid black; 
+            padding: 30px 30px 30px 30px ;
+            outline-style: solid;
+            outline-color: grey;
+            width: 940px;
+            outline-offset: 5px;
+            border-radius: 2%;">
+                
+                <legend> FILL THE FORM</legend><br>
+                
+
+            <input class="search" type="text" name="search" placeholder="search..." ><br><br>
+
+            <label for="fname" class="hello" > First Name : </label>
+            <input type="text" name="name" id="name" value="" required>
+            
+            <label for="lnamw">Last Name: </label>
+            <input type="text" name="lname" id="lname" value=""required>
+            <br><br>
+            
+           <label for=""> Gender: </label required>
+            
+            <label for="MALE">Male</label>
+            <input type="radio" name="gender" id="MALE" value=""> 
+             
+            <label for="FEMALE">Female </label>
+            <input type="radio" name="gender" id="FEMALE" value="">
+            <br><br>
+
+            <label for="email"> <i class="fa-solid fa-envelope-circle-check"></i> Email : </label>
+            <input type="email" name="email" id="mail" required >
+
+            <label for="number"> <i class="fa-solid fa-phone-volume"></i> Phone Number: </label>
+            <input type="number" name="number" maxlength="10" id="pnumber" value="" required>
+
+             <label for="tel number"> Tel Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-789"><br><br>
+
+            <label for="fcolor" > Select Your Fav Color : </label><input type="color" id="color" name="fcolor" value="rgb"> <br><br>
+            <input type="image" src="https://www.shutterstock.com/image-photo/young-plant-growing-sunlight-260nw-609086588.jpg   " 
+            alt="TREE" width="100" height="100"><br><br>
+    
+             <label for="bdate"><i class="fa-solid fa-cake-candles"></i> Birth Date : </label>
+             <input type="datetime-local"> 
+             <label for="time"> Set Your Time : </label>
+             <input type="time" id="time" name="time">
+             <label for="month"> Select Month : </label>
+             <input type="month">
+             <br><br>
+    
+            <label for="Address"><i class="fa-solid fa-address-card"></i>  Address : </label>
+            <textarea name="add" rows="3" cols="30"> </textarea required> <label for="pincord"> PinCode :</label> 
+                <input type="text" id="pin" name="pin" maxlength="6" size="10"><br>  <br>
+            
+            <label for="selact" > <i class="fa-solid fa-building-columns"></i> Select Your Bank : </label>
+                <select id="list" name="bank" required>
+                    
+                    <option value="sbi"> SBI</option>
+                    <option value="bob"> BOB</option>
+                    <option value="hdfc">HDFC</option>
+                    <option value="kotak"> KOTAK</option>
+                </select>
+                <label for="file"> <i class="fa-solid fa-file"></i>  Select Your File : </label><input type="file" name="file" multiple>
+                <br><br>
+                <input list="ACCESSORIES " name="ACCESSORIES" value="" required>
+                <datalist id="ACCESSORIES " >
+                 
+                    <option value="COMPUTAR"></option>
+                        <option value="LAPTOP"></option>
+                            <option value="CEMERA"></option>
+                                <option value="KEYBORD"></option>
+                        </datalist>
+
+                        
+
+
+                        <input type="submit" value="SUBMIT" >
+            <input type="reset" value="RESET"><BR>
+            
+           
+        </legend>
+    </fieldset>
+</legend>
+        </form>
+    </div>
+</body>
+</html>

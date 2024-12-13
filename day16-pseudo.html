@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="https://img.freepik.com/free-vector/gradient-p-logo-template_23-2149372725.jpg?size=338&ext=jpg&ga=GA1.1.867424154.1712275200&semt=ais">
+    <STYle>
+        body {
+            background-color: rgb(192, 252, 232);
+            color: rgb(245, 136, 3);
+        }
+
+        p {
+            margin: auto;
+            margin-top: 50px;
+            padding: 70px 250px 20px 250px;
+            height: 300px;
+            width: 150px;
+            text-align: center;
+
+        }
+        h1{
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+
+        p::first-letter {
+            color: black;
+            font-size: 30px;
+        }
+
+        p::first-line {
+            color: rgba(8, 4, 245, 0.986);
+            font-variant: small-caps;
+        }
+
+        h1::before {
+            background-image: url("https://gifdb.com/images/high/blushing-hug-emoji-3oiog8j560s1blzu.gif ");
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            content: "";
+        }
+
+        h1::after {
+            background-image: url("https://gifdb.com/images/high/blushing-hug-emoji-3oiog8j560s1blzu.gif ");
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            content: "";
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        ::selection{
+            background-color: yellow;
+            color: red;
+
+        }
+        ul,ol{
+            margin-left: 900px;
+        }
+        ::marker{
+            color: blue;
+        }
+
+    </STYle>
+</head>
+
+<body>
+
+    <div>
+        <h1><i class="fa-regular fa-face-smile"></i>SEMINAR<i class="fa-regular fa-face-smile"></i></h1>
+        <p style="border: 5px solid rgb(255, 153, 0);">
+             Hello everyone i welcome to all in this online seminar & i reqvest to all
+            to please keep your phone on silet.<br>
+            i like to you all anjoy this seminar.<br>
+            i am nirav vaja i am ancor to night
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ul>
+              
+              <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+              </ol>
+        </p>
+        
+    </div>
+</body>
+
+</html>

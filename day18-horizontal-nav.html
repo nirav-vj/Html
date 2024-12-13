@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZONTAL NAV</title>
+    <link rel="icon"href="https://img.myloview.com/stickers/hn-nh-abstract-initial-monogram-letter-alphabet-logo-design-700-268970612.jpg">
+    <style>
+        body {
+            background-color: darkcyan;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: aquamarine;
+            /* padding: 1px; */
+            /* text-decoration: none; */
+            /* width: 1000px; */
+            /* height: 100px; */
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style: center;
+        }
+
+
+
+        li {
+            display: inline;
+            border-right: 2px solid rgb(248, 11, 3);
+            text-decoration: none;
+            gap: 20px;
+        }
+
+        /* li:hover {
+            background-color: rgb(192, 192, 121);
+            height: px;
+        } */
+
+        li a:active {
+            color:red;
+        }
+
+
+
+
+
+
+
+        ul li a {
+            text-decoration: none;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        li a:hover,.class1:hover .class2 {
+            background-color:rgba(253, 192, 113, 0.959);
+        }
+
+        li.class1 {
+            display: inline-block;
+        }
+
+        .class3 {
+            display: none;
+            position: absolute;
+            background-color: #7fe9f31c;
+            width: 125px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: +1;
+            /* color: white; */
+        }
+
+        li a,.class2 {
+            display: inline-block;
+            color: rgb(7, 7, 7);
+            /* text-align: center; */
+            padding: 14px 16px;
+            /* text-decoration: none; */   
+        }
+
+        .class3 a {
+            color: rgb(5, 5, 5);
+            padding: 12px 16px;
+            display: block;
+            text-align: center;
+        }
+
+        .class3 a:hover {
+            background-color:aquamarine;
+        }
+
+        .class1:hover .class3 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="https://www.pexels.com/search/hd/" target="_blank">HOME</a></li>
+        <li><a href="https://www.pexels.com/search/hd/" target="_blank">CONTECT</a></li>
+        <li class="class1"><a href="https://www.pexels.com/search/hd/" target="_blank" class="class2">ABOUT US</a>
+            <div class="class3">
+
+                <a href="https://www.pexels.com/search/hd/" target="_blank">list01</a>
+                <a href="https://www.pexels.com/search/hd/" target="_blank">list02</a>
+                <a href="https://www.pexels.com/search/hd/" target="_blank">list03</a>
+
+            </div>
+        </li>
+        <li><a href="https://www.pexels.com/search/hd/" target="_blank">MENU</a></li>
+        <li><a href="https://www.pexels.com/search/hd/" target="_blank">NEWS</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-INDEX</title>
+    <STYle>
+        body{
+             background-color:lightgray;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+         }   
+         p{
+            color: rgb(245, 240, 240);
+            width: 50%;
+            /* color: rgb(196, 160, 160); */
+         }
+        /* .overflow {
+            width: 1000px;
+            height: 1000px;
+            border: 10px solid red;
+            overflow: auto;
+
+        } */
+        img{
+            float: right;
+        }
+        .after{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: auto;
+            display: block;
+        }
+        .after::after{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            display: inline-block;
+        }
+        .after::before{
+            content: "div01";
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: inline-block;
+
+        }
+        
+    </STYle>
+</head>
+
+<body>
+    <!-- <iframe src="overflow.html" frameborder="0" width="200px" height="150px"></iframe> -->
+    <div>
+        <div>
+            <!-- <img src="https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712188800&semt=ais" alt=""
+            width="50%" height="50%"></div> -->
+                
+    </div>
+
+        <p class="overflow" style="font-size: xlarge;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta totam deleniti, modi id magnam doloremque
+            debitis eius molestias iure nemo cumque! Illo mollitia voluptates, aperiam dicta unde ipsum nihil
+            voluptatum.
+            
+        </p>
+
+
+        <div class="after">div01</div>
+
+
+</body>
+
+</html>
